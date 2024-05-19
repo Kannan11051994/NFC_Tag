@@ -6,19 +6,27 @@
 //
 
 import UIKit
+import CoreNFC
 
-class MainViewController : UIViewController {
-
+class MainViewController : UIViewController,NFCNDEFReaderSessionDelegate {
+    
+    //MARK:- Initialization
     @IBOutlet weak var lblNFCText: UILabel?
     var nfcMessage = ""
+    var session: NFCNDEFReaderSession?
+    var isWrite = true
     
+    //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lblNFCText?.text = ""
         // Do any additional setup after loading the view.
     }
-
+    
+    //MARK:- Button Action
     @IBAction func writeNFC(sender: UIButton) {
-        
+        isWrite = true
+        self.lblNFCText?.text = ""
         switch sender.tag {
         case 0:
             nfcMessage = NFCMessage.clockIn.rawValue
@@ -35,19 +43,12 @@ class MainViewController : UIViewController {
         default:
             nfcMessage = ""
         }
+        
+        self.writeMessage()
     }
-    
     
     @IBAction func readNFC(sender: UIButton) {
-        
+        isWrite = false
+        self.readMessage()
     }
-
-}
-
-
-enum NFCMessage: String {
-    case clockIn = "Clock In"
-    case clockOut = "Clock Out"
-    case takeBreak = "Take Break"
-    case breakEnd = "Break End"
 }

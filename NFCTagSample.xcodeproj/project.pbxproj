@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		8434A6542BF5BAEF00229E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6532BF5BAEF00229E60 /* AppDelegate.swift */; };
 		8434A6562BF5BAEF00229E60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6552BF5BAEF00229E60 /* SceneDelegate.swift */; };
-		8434A6582BF5BAEF00229E60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6572BF5BAEF00229E60 /* ViewController.swift */; };
+		8434A6582BF5BAEF00229E60 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6572BF5BAEF00229E60 /* MainViewController.swift */; };
 		8434A65B2BF5BAEF00229E60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8434A65A2BF5BAEF00229E60 /* Base */; };
 		8434A65D2BF5BAF100229E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8434A65C2BF5BAF100229E60 /* Assets.xcassets */; };
 		8434A6602BF5BAF100229E60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8434A65F2BF5BAF100229E60 /* Base */; };
 		8434A66B2BF5BAF100229E60 /* NFCTagSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A66A2BF5BAF100229E60 /* NFCTagSampleTests.swift */; };
 		8434A6752BF5BAF100229E60 /* NFCTagSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6742BF5BAF100229E60 /* NFCTagSampleUITests.swift */; };
 		8434A6772BF5BAF100229E60 /* NFCTagSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434A6762BF5BAF100229E60 /* NFCTagSampleUITestsLaunchTests.swift */; };
+		848274A42BFA799900A854A2 /* MainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848274A32BFA799900A854A2 /* MainExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		8434A6502BF5BAEF00229E60 /* NFCTagSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFCTagSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8434A6532BF5BAEF00229E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8434A6552BF5BAEF00229E60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8434A6572BF5BAEF00229E60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8434A6572BF5BAEF00229E60 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8434A65A2BF5BAEF00229E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8434A65C2BF5BAF100229E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8434A65F2BF5BAF100229E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		8434A6702BF5BAF100229E60 /* NFCTagSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFCTagSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8434A6742BF5BAF100229E60 /* NFCTagSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTagSampleUITests.swift; sourceTree = "<group>"; };
 		8434A6762BF5BAF100229E60 /* NFCTagSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTagSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		848274A22BFA66F500A854A2 /* NFCTagSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCTagSample.entitlements; sourceTree = "<group>"; };
+		848274A32BFA799900A854A2 /* MainExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +102,11 @@
 		8434A6522BF5BAEF00229E60 /* NFCTagSample */ = {
 			isa = PBXGroup;
 			children = (
+				848274A22BFA66F500A854A2 /* NFCTagSample.entitlements */,
 				8434A6532BF5BAEF00229E60 /* AppDelegate.swift */,
 				8434A6552BF5BAEF00229E60 /* SceneDelegate.swift */,
-				8434A6572BF5BAEF00229E60 /* ViewController.swift */,
+				8434A6572BF5BAEF00229E60 /* MainViewController.swift */,
+				848274A32BFA799900A854A2 /* MainExtension.swift */,
 				8434A6592BF5BAEF00229E60 /* Main.storyboard */,
 				8434A65C2BF5BAF100229E60 /* Assets.xcassets */,
 				8434A65E2BF5BAF100229E60 /* LaunchScreen.storyboard */,
@@ -258,7 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8434A6582BF5BAEF00229E60 /* ViewController.swift in Sources */,
+				848274A42BFA799900A854A2 /* MainExtension.swift in Sources */,
+				8434A6582BF5BAEF00229E60 /* MainViewController.swift in Sources */,
 				8434A6542BF5BAEF00229E60 /* AppDelegate.swift in Sources */,
 				8434A6562BF5BAEF00229E60 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,9 +446,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = NFCTagSample/NFCTagSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2L2492CJW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NFCTagSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -456,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kanna.NFCTagSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AKOnline.AKOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -470,9 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = NFCTagSample/NFCTagSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2L2492CJW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NFCTagSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -486,7 +496,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kanna.NFCTagSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AKOnline.AKOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
